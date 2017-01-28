@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12pt;
+}
+
+body {
+  margin: 10;
+  font-family: sans-serif;
+  font-size: 1rem;
+  background-color: #f4f4f4;
+}
+
+.logo{
+	display: block;
+    margin: auto;
+}
+
+.seperator {
+  display: block;
+  margin-top: 10px;
+  height: 6px;
+  width: 100%;
+  content: '';
+  background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, 0.5) 0px, rgba(255, 255, 255, 0) 65%);
+}
+
+.info
+{
+	font-family : 'Play', Arial, Helvetica, sans-serif;
+	text-align : center;
+	line-height : 32px;
+	color : #009ee0;
+}
+
+.inps{
+  display: table;
+}
+.elmts
+{
+  display: table-row;
+  vertical-align: middle;
+}
+.grps
+{
+  display: table-cell;
+  margin: 2px;
+  vertical-align: middle;
+}
+
+::-webkit-input-placeholder {
+ font-size: 10px;
+ }
+:-moz-placeholder { /* older Firefox*/
+ font-size:10px;
+
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+ font-size: 10px;
+
+} 
+:-ms-input-placeholder { 
+ font-size: 10px; 
+}
+
+
+.dropzone
+{
+  min-height:4rem;
+  font-size:1rem;
+  line-height:1.5rem;
+  padding:1.25rem 0.5rem;
+  border:0.2rem dashed transparent;
+  cursor:pointer;
+  text-align:center;
+  border-radius:1rem;
+  margin:0.5rem auto;
+  max-width:35rem
+}
+.dropzone input
+{
+  display:none
+}
+.dropzone.ready
+{
+  color:#888;
+  background:rgba(136,136,136,0.1);
+  border-color:#888
+}
+.dropzone.ready::before
+{
+  display:inline;
+  text-transform:uppercase;
+  content:"Drop a file or click to upload."
+}
+.dropzone.success
+{
+  color:#8c8;
+  background:rgba(136,204,136,0.1);
+  border-color:#8c8
+}
+.dropzone.success::before
+{
+  display:inline;
+  text-transform:uppercase;
+  content:"Upload successful. Repeated upload resets file."
+}
+.dropzone.error,.dropzone.unsupported
+{
+  color:#c88;
+  background:rgba(204,136,136,0.1);
+  border-color:#c88
+}
+.dropzone.error::before
+{ 
+  display:inline;
+  text-transform:uppercase;
+  content:"An error occoured. Please retry."
+}
+.dropzone.unsupported::before
+{ 
+  display:inline;
+  text-transform:uppercase;
+  content:"Your browser does not support local file readings."
+}
+
+
+.colss
+{
+  display:block;
+  margin:0.5rem 0;
+  list-style:none;
+  padding:0;
+  text-align:center
+}
+.colss>li
+{
+display:inline-block;
+text-align:left
+}
+.colss>li:not(:first-child)
+{
+  padding-left:1rem
+}
+.colss>li:not(:last-child-child)
+{
+padding-right:1rem
+}
+
+.colss .block-label
+{
+  display:block
+}
+
+.indicator
+{
+  width:3rem;
+  height:3rem;
+  padding:1rem 0;
+  border:0.2rem dashed transparent;
+  text-align:center;
+  border-radius:1.5rem;
+  font-size:1rem;
+  line-height:1rem
+}
+.indicator.suggest
+{
+  color:#0b2150;
+  background:rgba(137, 178, 205, 1);
+  border-color:#0b2150;
+}
+.indicator.suggest::before
+{
+  display:inline;
+  text-transform:uppercase;
+  content:"\0BB"
+}
+.indicator.valid
+{
+  color:#8c8;
+  background:rgba(136,204,136,0.1);
+  border-color:#8c8
+}
+.indicator.valid::before
+{
+  display:inline;
+  text-transform:uppercase;
+  content:"\2713"
+}
+.indicator.invalid
+{
+  color:#c88;
+  background:rgba(204,136,136,0.1);
+  border-color:#c88
+}
+.indicator.invalid::before
+{
+  display:inline;
+  text-transform:uppercase;
+  content:"\2717"
+}
+

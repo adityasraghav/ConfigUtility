@@ -1,0 +1,39 @@
+{
+  "name": "osc-product-feed-config",
+  "version": "1.0.0",
+  "description": "Odoscope product feed configuration tool",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityasraghav/ConfigUtility.git"
+  },
+  "keywords": [
+    "osc",
+    "product",
+    "feed",
+    "config"
+  ],
+  "author": "Aditya Singh Raghav <ar@odoscope.com>",
+  "bugs": {
+    "url": "https://github.com/vwochnik/osc-product-feed-config/issues"
+  },
+  "homepage": "https://github.com/vwochnik/osc-product-feed-config#readme",
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "riot": "^2.4.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-webserver": "^0.9.1",
+    "rollup-plugin-babel": "^2.5.1",
+    "rollup-plugin-commonjs": "^3.0.0",
+    "rollup-plugin-json": "^2.0.0",
+    "rollup-plugin-node-resolve": "^1.7.0",
+    "rollup-plugin-riot": "^0.4.0",
+    "rollup-stream": "^1.8.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

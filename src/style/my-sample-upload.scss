@@ -1,0 +1,68 @@
+$drop-ready-color: #888;
+$drop-success-color: #8c8;
+$drop-error-color: #c88;
+
+my-sample-upload {
+  .dropzone {
+    min-height: 4rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1.25rem 0.5rem;
+    border: 0.2rem dashed transparent;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 0.5rem auto;
+    max-width: 35rem;
+
+    input {
+      display: none;
+    }
+
+    &.ready {
+      color: $drop-ready-color;
+      background: rgba($drop-ready-color, 0.1);
+      border-color: $drop-ready-color;
+
+      &::before {
+        display: inline;
+        text-transform: uppercase;
+        content: "Drop a file or click to upload.";
+      }
+    }
+
+    &.success {
+      color: $drop-success-color;
+      background: rgba($drop-success-color, 0.1);
+      border-color: $drop-success-color;
+
+      &::before {
+        display: inline;
+        text-transform: uppercase;
+        content: "Upload successful. Repeated upload resets file.";
+      }
+    }
+
+    &.error, &.unsupported {
+      color: $drop-error-color;
+      background: rgba($drop-error-color, 0.1);
+      border-color: $drop-error-color;
+    }
+
+    &.error {
+      &::before {
+        display: inline;
+        text-transform: uppercase;
+        content: "An error occoured. Please retry.";
+      }
+    }
+
+    &.unsupported {
+      &::before {
+        display: inline;
+        text-transform: uppercase;
+        content: "Your browser does not support local file readings.";
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+$indicator-valid-color: #8c8;
+$indicator-semi-color: #a8a880;
+$indicator-invalid-color: #c88;
+
+my-file-format {
+  .cols {
+    display: block;
+    margin: 0.5rem 0;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    > li {
+      display: inline-block;
+      text-align: left;
+
+      &:not(:first-child) {
+        padding-left: 1rem;
+      }
+
+      &:not(:last-child-child) {
+        padding-right: 1rem;
+      }
+    }
+
+    .block-label {
+      display: block;
+    }
+  }
+
+  input[type='text'] {
+    width: 1rem;
+  }
+
+  .indicator {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem 0;
+    border: 0.2rem dashed transparent;
+    text-align: center;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
+
+    &.valid {
+      color: $indicator-valid-color;
+      background: rgba($indicator-valid-color, 0.1);
+      border-color: $indicator-valid-color;
+
+      &::before {
+        display: inline;
+        text-transform: uppercase;
+        content: "\2713";
+      }
+    }
+
+    &.invalid {
+      color: $indicator-invalid-color;
+      background: rgba($indicator-invalid-color, 0.1);
+      border-color: $indicator-invalid-color;
+
+      &::before {
+        display: inline;
+        text-transform: uppercase;
+        content: "\2717";
+      }
+    }
+  }
+}
